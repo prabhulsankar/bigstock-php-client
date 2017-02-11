@@ -59,7 +59,7 @@ class Bigstock
      */
     public function search($params)
     {
-        $url = 'http://' . $this->url_base . '/search/?';
+        $url = 'http://' . $this->url_base . 'search/?';
         $url .= http_build_query($params);
         $r = $this->rest->get($url);
         return $this->processResponse($r);
